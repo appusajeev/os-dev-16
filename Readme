@@ -1,0 +1,14 @@
+To boot from the OS, plug the pen drive,
+(You must have root permission)
+
+1. Find the device file associated with the pen drive, run dmesg|tail to know.
+2. Open Makefile in this direcory, edit the first line and assign the file associated with the pen drive to 'dev' variable (eg: dev =/dev/sdc).
+2. Run make in this directory.
+3. Reboot and choose to boot from USB Mass Storage.
+
+
+Note: The contents of the pen drive will be lost while this is done. So make sure you back up its contents.
+
+
+
+appusajeev@gmail.com
